@@ -1,0 +1,14 @@
+{% extends 'bass.html' %}
+
+{% block content %}
+<div class="create">
+<h1>
+    create your realstate
+</h1>
+    <form class="site-form" action="{% url 'balhbalh:create' %}" method="post", enctype="multipart/form-data">
+        {{ formha }}
+        {% csrf_token %}
+        <input type="submit" name="" value="create"
+    </form>
+<div/>
+{% endblock content %}
